@@ -135,7 +135,7 @@
 </body>
 <script>
     document.getElementById('osf-text').innerHTML = OSFText;
-    repos.map((item) => {
+    repos.map( async (item) => {
         let repos = document.getElementById('osf-repos');
         let div = document.createElement('div');
         let a = document.createElement('a');
@@ -150,6 +150,9 @@
         a.setAttribute("class", "p-2 lift mr-1");
         p.setAttribute("class", "text-muted mb-0 p-2");
         repos.appendChild(div);
+        var resp = await fetch(`https://leaderboardserver.herokuapp.com/prcount/${item.repoalias}`)
+        var prcount = await resp.json();
+        console.log(item , prcount);
     })
 </script>
 </html>
