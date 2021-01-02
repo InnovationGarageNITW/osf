@@ -40,6 +40,7 @@ const contributors = [
     'ghanender-chauhan',
     'saitejach127',
     'sahil-ramagiri',
+    'hvardhan2000',
     'smartankur',
     'avinashsatya7',
     'dheerajd5',
