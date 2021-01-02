@@ -152,6 +152,7 @@
         div.appendChild(p);
         let labeldiv=document.createElement('div');
         let badges="";
+        if(item.techstack)
         item.techstack.map(tech => {
             badges+=`<span class="badge text-muted">${tech}</span>`;
         })
