@@ -140,6 +140,9 @@
         let div = document.createElement('div');
         let a = document.createElement('a');
         let p = document.createElement('p');
+        var resp = await fetch(`https://leaderboardserver.herokuapp.com/prcount/${item.repoalias}`)
+        var prcount = await resp.json();
+        console.log(item , prcount);
         a.href = item.link;
         a.innerText = item.name;
         p.innerHTML = item.description;
@@ -147,12 +150,13 @@
         div.setAttribute("data-aos", "fade-up");
         div.appendChild(a);
         div.appendChild(p);
+        let innerdiv =document.createElement('div');
+        innerdiv.innerHTML= `<h3>${prcount.result}</h3> <span class="text-muted">PRs Merged </span>`;
+        innerdiv.setAttribute("class","m-2");
+        div.appendChild(innerdiv);
         a.setAttribute("class", "p-2 lift mr-1");
         p.setAttribute("class", "text-muted mb-0 p-2");
         repos.appendChild(div);
-        var resp = await fetch(`https://leaderboardserver.herokuapp.com/prcount/${item.repoalias}`)
-        var prcount = await resp.json();
-        console.log(item , prcount);
     })
 </script>
 </html>
