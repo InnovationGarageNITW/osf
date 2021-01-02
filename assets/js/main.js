@@ -51,4 +51,5 @@ const contributors = [
     'dheerajd5',
     'siddharth177',
     'Siddharth1006'
+    'eraviral34'
 ];
