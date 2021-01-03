@@ -57,7 +57,7 @@ const contributors = [
     'avinashsatya7',
     'dheerajd5',
     'siddharth177',
-    'Siddharth1006'
+    'Siddharth1006',
     'eraviral34',
     'Siddharth1006',
     'Ajay-creator',
