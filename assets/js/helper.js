@@ -41,7 +41,7 @@ async function createRepoDOM(item){
     prdiv.innerHTML= `<div><p class="fs-4">Pull Requests</p><p class="badge bg-primary m-1">Total: ${pr} </p><p class="badge bg-primary m-1">  Merged: ${prMerged}</p> <p class="badge bg-primary m-1">PRs Open: ${prOpen}</p></div>`;
     prdiv.setAttribute("class","m-2");
     let issuediv =document.createElement('div');
-    issuediv.innerHTML= `<div><p class="fs-4">Issues</p><p class="badge bg-primary m-1">Total: ${issues} </p><p class="badge bg-primary m-1">  Closed: ${issuesClosed}</p> <p class="badge bg-primary m-1">PRs Open: ${prOpen}</p></div>`;
+    issuediv.innerHTML= `<div><p class="fs-4">Issues</p><p class="badge bg-primary m-1">Total: ${issues} </p><p class="badge bg-primary m-1">  Closed: ${issuesClosed}</p></div>`;
     issuediv.setAttribute("class","m-2");
     div.appendChild(prdiv);
     div.appendChild(issuediv);
