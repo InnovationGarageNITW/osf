@@ -7,13 +7,13 @@ const repos = [
         repoalias : "aadiiver/Hakons20",
         techstack:["Html","CSS","Php","MySQL"]
     },
-    {
-        name: 'SoulSion',
-        description: 'Web Application for stress management and mental health wellness',
-        link: 'https://github.com/sauravshah31/SoulSion',
-        repoalias : "sauravshah31/SoulSion",
-        techstack:["ReactJS","Flask"]
-    },
+    // {
+    //     name: 'SoulSion',
+    //     description: 'Web Application for stress management and mental health wellness',
+    //     link: 'https://github.com/sauravshah31/SoulSion',
+    //     repoalias : "sauravshah31/SoulSion",
+    //     techstack:["ReactJS","Flask"]
+    // },
     {
         name: 'Text-to-handwritting',
         description: 'We all get bored while writting our assignments so here i am working on a model which can make your assignments.',
